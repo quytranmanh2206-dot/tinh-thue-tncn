@@ -16,7 +16,7 @@ html, body, [class*="css"] {
 }
 
 .stApp {
-    background: linear-gradient(135deg, #060f28 0%, #0a1e46 50%, #060f28 100%);
+    background: #f4f6fa;
     min-height: 100vh;
 }
 
@@ -33,9 +33,9 @@ html, body, [class*="css"] {
 }
 .badge {
     display: inline-block;
-    background: rgba(55,138,221,0.2);
-    border: 1px solid rgba(55,138,221,0.5);
-    color: #85B7EB;
+    background: rgba(55,138,221,0.12);
+    border: 1px solid rgba(55,138,221,0.4);
+    color: #185FA5;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -47,27 +47,27 @@ html, body, [class*="css"] {
 .main-title {
     font-size: 28px;
     font-weight: 700;
-    color: #ffffff;
+    color: #1a3a6b;
     margin-bottom: 0.4rem;
-    text-shadow: 0 0 30px rgba(55,138,221,0.3);
 }
 .main-sub {
     font-size: 13px;
-    color: rgba(180,200,230,0.75);
+    color: #5a7399;
 }
 
 /* Cards */
 .glass-card {
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.13);
+    background: #ffffff;
+    border: 1px solid #d0dce8;
     border-radius: 16px;
     padding: 1.5rem;
     margin-bottom: 1rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 .card-title {
     font-size: 12px;
     font-weight: 700;
-    color: #85B7EB;
+    color: #185FA5;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -120,14 +120,14 @@ html, body, [class*="css"] {
     margin: 1rem 0;
 }
 .metric-card {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: #eef4fb;
+    border: 1px solid #c8ddf0;
     border-radius: 12px;
     padding: 1rem 1.25rem;
 }
 .metric-label {
     font-size: 10px;
-    color: rgba(133,183,235,0.7);
+    color: #5a7399;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -136,7 +136,7 @@ html, body, [class*="css"] {
 .metric-value {
     font-size: 16px;
     font-weight: 700;
-    color: #ffffff;
+    color: #1a3a6b;
 }
 .metric-value.warn { color: #FAC775; }
 .metric-value.blue { color: #85B7EB; }
@@ -145,13 +145,13 @@ html, body, [class*="css"] {
 
 /* Formula box */
 .formula-box {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
+    background: #f0f6ff;
+    border: 1px solid #c8ddf0;
     border-radius: 12px;
     padding: 1rem 1.25rem;
     font-size: 13px;
     line-height: 2;
-    color: rgba(200,220,245,0.85);
+    color: #334e6b;
     margin: 1rem 0;
 }
 .formula-highlight {
@@ -185,15 +185,15 @@ html, body, [class*="css"] {
 
 /* Tabs */
 .stTabs [data-baseweb="tab-list"] {
-    background: rgba(255,255,255,0.06);
+    background: #e0ecf8;
     border-radius: 12px;
     padding: 4px;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid #b8d0e8;
     gap: 4px;
 }
 .stTabs [data-baseweb="tab"] {
     border-radius: 8px;
-    color: rgba(180,200,230,0.7);
+    color: #334e6b;
     font-weight: 600;
     font-size: 13px;
 }
@@ -205,31 +205,30 @@ html, body, [class*="css"] {
 /* Inputs */
 div[data-testid="stNumberInput"] input,
 div[data-testid="stSelectbox"] select,
-div[data-testid="stNumberInput"] div[data-baseweb="input"],
 div[data-baseweb="input"] {
-    background: rgba(10, 30, 70, 0.85) !important;
-    border: 1px solid rgba(55,138,221,0.4) !important;
+    background: #ffffff !important;
+    border: 1px solid #c0d0e0 !important;
     border-radius: 10px !important;
-    color: #ffffff !important;
+    color: #1a3a6b !important;
 }
 div[data-testid="stNumberInput"] input:focus,
 div[data-baseweb="input"]:focus-within {
     border-color: #378ADD !important;
-    background: rgba(24,95,165,0.3) !important;
 }
-/* Override Streamlit white input background */
 .stNumberInput input,
 .stTextInput input,
 input[type="number"] {
-    background-color: rgba(10, 30, 70, 0.85) !important;
-    color: #ffffff !important;
-    border: 1px solid rgba(55,138,221,0.4) !important;
+    background-color: #ffffff !important;
+    color: #1a3a6b !important;
+    border: 1px solid #c0d0e0 !important;
 }
-div[data-testid="stRadio"] label {
-    color: rgba(180,200,230,0.85) !important;
+div[data-testid="stRadio"] label,
+div[data-testid="stRadio"] label p {
+    color: #1a3a6b !important;
+    font-weight: 600 !important;
 }
 label[data-testid="stWidgetLabel"] p {
-    color: rgba(180,200,230,0.85) !important;
+    color: #334e6b !important;
     font-size: 13px !important;
     font-weight: 500 !important;
 }
@@ -259,8 +258,8 @@ div[data-testid="stDataFrame"] {
 
 /* Detail rows */
 .detail-box {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
+    background: #f8fafc;
+    border: 1px solid #d0dce8;
     border-radius: 12px;
     padding: 1rem 1.25rem;
     margin: 0.75rem 0;
@@ -269,42 +268,42 @@ div[data-testid="stDataFrame"] {
     display: flex;
     justify-content: space-between;
     padding: 7px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid #e8eef5;
     font-size: 13px;
 }
 .detail-row:last-child { border-bottom: none; }
-.dk { color: rgba(180,200,230,0.75); }
-.dv { color: #ffffff; font-weight: 600; }
-.dv-blue { color: #85B7EB; font-weight: 600; }
+.dk { color: #5a7399; }
+.dv { color: #1a3a6b; font-weight: 600; }
+.dv-blue { color: #185FA5; font-weight: 600; }
 .dv-red  { color: #F09595; font-weight: 600; }
 
 /* Section head */
 .section-head {
     font-size: 11px;
     font-weight: 700;
-    color: rgba(133,183,235,0.6);
+    color: #185FA5;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 0.75rem;
     padding-bottom: 6px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid #d0dce8;
 }
 
 /* Note */
 .note-text {
     font-size: 11px;
-    color: rgba(133,183,235,0.55);
+    color: #7a9ab5;
     margin-top: 4px;
 }
 
 /* Info box */
 .info-box {
-    background: rgba(55,138,221,0.1);
-    border: 1px solid rgba(55,138,221,0.25);
+    background: #e8f2fd;
+    border: 1px solid #b0cceb;
     border-radius: 10px;
     padding: 0.75rem 1rem;
     font-size: 13px;
-    color: #85B7EB;
+    color: #185FA5;
     margin: 0.5rem 0;
 }
 
