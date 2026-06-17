@@ -77,8 +77,8 @@ html, body, [class*="css"] {
 
 /* Result boxes */
 .result-main {
-    background: linear-gradient(135deg, rgba(24,95,165,0.4), rgba(55,138,221,0.25));
-    border: 1px solid rgba(55,138,221,0.5);
+    background: linear-gradient(135deg, #185FA5, #378ADD);
+    border: 1px solid #185FA5;
     border-radius: 14px;
     padding: 1.5rem;
     text-align: center;
