@@ -204,11 +204,26 @@ html, body, [class*="css"] {
 
 /* Inputs */
 div[data-testid="stNumberInput"] input,
-div[data-testid="stSelectbox"] select {
-    background: rgba(255,255,255,0.06) !important;
-    border: 1px solid rgba(255,255,255,0.15) !important;
+div[data-testid="stSelectbox"] select,
+div[data-testid="stNumberInput"] div[data-baseweb="input"],
+div[data-baseweb="input"] {
+    background: rgba(10, 30, 70, 0.85) !important;
+    border: 1px solid rgba(55,138,221,0.4) !important;
     border-radius: 10px !important;
     color: #ffffff !important;
+}
+div[data-testid="stNumberInput"] input:focus,
+div[data-baseweb="input"]:focus-within {
+    border-color: #378ADD !important;
+    background: rgba(24,95,165,0.3) !important;
+}
+/* Override Streamlit white input background */
+.stNumberInput input,
+.stTextInput input,
+input[type="number"] {
+    background-color: rgba(10, 30, 70, 0.85) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(55,138,221,0.4) !important;
 }
 div[data-testid="stRadio"] label {
     color: rgba(180,200,230,0.85) !important;
